@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+:root {
+    --border-color: #144fc6;
+    --fill-color: #6ab3f8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3494e4;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 10px 0 0;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.cup {
+    background-color: #fff;
+    border: 4px solid var(--border-color);
+    color: var(--border-color);
+    border-radius: 0 0 40px 40px;
+    height: 330px;
+    width: 150px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.cups {
+    text-align: center;
+    justify-content: center;   
+    z-index: -1;
+}
+
+#count {
+    margin: 0px 10px;
+    background-color: inherit;
+    color: #fff;
+    border: none;
+    border-bottom: 4px solid var(--border-color);
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+
+#count::placeholder {
+    color: #fff;
+}
+
+#count:focus {
+    outline: none;
+}
+
+#plusBtn {
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+}
+
+#plusBtn:focus {
+    outline: none;
+}
+
+#plusBtn:disabled .fas {
+    color: var(--fill-color);
+    cursor: not-allowed;
+}
+
+.remained {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+.remained span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.remained small {
+    font-size: 12px;
+}
+
+.percentage {
+    background-color: var(--fill-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    height: 0px;
+    transition: 0.3s ease;
+}
+
+.text {
+    text-align: center;
+    margin: 0 0 5px;
+}
+
+.resetCups {
+    text-align: center;
+}
+
+#reset {
+    border-color: var(--border-color);
+    border-radius: 5px;
+    margin: 7px 0;
+    padding: 7px 20px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+#reset:focus {
+    outline: none;
+}
+
+.inactive {
+    visibility: hidden;
+    height: 0;
+}

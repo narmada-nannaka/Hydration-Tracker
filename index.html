@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydration Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Drinking Water Tracker</h1>
+    <h3>Goal: 2 Lts</h3>
+    <div class="cup">
+        <div class="remained" id="remained">
+            <span id="litres"></span>
+            <small>Remained</small>
+        </div>
+
+        <div class="percentage" id="percentage">
+        </div>
+    </div>
+
+    <div class="textCup">
+        <div class="text">Select how many glasses of water that you have drank</div>
+
+        <div class="cups">
+            <label for="count">250ml of </label>
+            <input id="count" type="text" placeholder="0" readonly> 
+            <button id="plusBtn"><i class="fas fa-glass-whiskey fa-2x"></i></button>
+        </div>
+    </div>
+
+    <div class="resetCups inactive">
+        <div class="text">Woohoo! You reached your goal! Reset to try again. </div>
+        <button id="reset">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
